@@ -53,7 +53,6 @@ controls.enableDamping=true
 // 设置阻尼系数
 controls.dampingFactor=0.03
 
-
 function animate() {
   requestAnimationFrame( animate );
   controls.update();
@@ -106,6 +105,8 @@ let colorParams={
 gui.addColor(colorParams,'cubeColor').name("立方体颜色").onChange((val)=>{
   cube.material.color.set(val)
 })
+
+
 
 </script>
 
